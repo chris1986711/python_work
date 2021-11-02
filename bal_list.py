@@ -51,7 +51,8 @@ def min_color(n_balls:dict)->dict:
 #打印每個顏色及其數量
 
 #打印出顏色數量由大到小 
-
+def k(n_balls:dict)->dict:
+    return (sorted(n_balls.items(), key=lambda x:x[1],reverse=True))
 
 if __name__ == "__main__":
    balls = ["blue", "yellow", "red", "red", "orange", "blue", "yellow"]
@@ -114,5 +115,4 @@ print("平均一個色多少球",count_balls(balls)/n_colors(balls))
 
 print("{顏色：數量}",n_balls)
 
-print(sorted(n_balls.keys()))
-#我以為他會由大到小排,結果很奇怪
+print("由多到少排序",k(n_balls))
