@@ -24,6 +24,5 @@ class Song(object):
 
 happy_baby = Song(["May god bless you,","Have a sunshine on you,","Happy Brithday to you!"])
 
-print (happy_baby.sing_me_a_song())
+happy_baby.sing_me_a_song()
 
-#none是從哪來的？？？

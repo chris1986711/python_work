@@ -21,4 +21,4 @@ class Lunch:
 paul = Lunch("menu1")
 
 
-print(paul.menu_price())
+paul.menu_price()
