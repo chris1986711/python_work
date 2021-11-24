@@ -23,10 +23,6 @@ add = input("地址（範例：紐約第五大道 24 號）")
 
 target = input("目標（範例：成為史上最強的工程師）")
 
-
-
-print("生日:",brithday)
-
 print("地址:",add)
 
 print("目標:",target)
