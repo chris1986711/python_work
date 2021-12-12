@@ -19,25 +19,25 @@ tyler = {
 
 ## print the student's name
 
-student = [lloyd.get("name",),alice.get("name"),tyler.get("name")]
+student = [lloyd["name"],alice["name"],tyler["name"]]
 
 print(student)
 
 ## print the student's homework
 
-student = [lloyd.get("homework",),alice.get("homework"),tyler.get("homework")]
+student = [lloyd["homework"],alice["homework"],tyler["homework"]]
 
 print(student)
 
 ## print the student's quizzes
 
-student = [lloyd.get("quizzes",),alice.get("quizzes"),tyler.get("quizzes")]
+student = [lloyd["quizzes"],alice["quizzes"],tyler["quizzes"]]
 
 print(student)
 
 ## print the student's tests
 
-student = [lloyd.get("tests",),alice.get("tests"),tyler.get("tests")]
+student = [lloyd["tests"],alice["tests"],tyler["tests"]]
 
 print(student)
 
