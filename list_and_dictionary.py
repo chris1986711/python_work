@@ -65,15 +65,20 @@ def get_average(student):
 ### Define a new function called get_letter_grade that has one argument called score. Expect score to be a number.
 
 def get_letter_grade(score):
-	if score >= 90:return "A"
+    if score >= 90:
+      return "A"
     	
-	elif score >= 80:return "B"
+    elif score >= 80:
+      return "B"
    		
-	elif score >= 70:return "C"
+    elif score >= 70:
+      return "C"
     	
-	elif score >= 60:return "D"
-    	
-	else:return "F"
+    elif score >= 60:
+      return "D"
+    
+    else:
+      return "F"
 
 ###Define a function called `get_class_average` that has one argument, students. You can expect students to be a list containing your three students.
 
