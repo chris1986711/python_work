@@ -1,4 +1,4 @@
-from typing import List
+from typing import List,Dict
 
 #有幾種顏色
 
@@ -8,42 +8,42 @@ def n_colors(balls: List) -> int:
 
 #列出所有顏色
 
-def list_colors(balls:list)->list:
+def list_colors(balls: List)->list:
     """this function list balls color"""
     return set(balls)
 
 #有幾顆球
 
-def count_balls(balls:list)->int:
+def count_balls(balls:List)->int:
    """this function count ball number"""
    return len(balls)
 
 #每一種顏色有幾個
 
-def blue_ball_n(balls:list)->int:
+def blue_ball_n(balls:List)->int:
    """this function count blue ball"""
    return balls.count("blue")
 
-def yellow_ball_n(balls:list)->int:
+def yellow_ball_n(balls:List)->int:
     """this function count yellow ball"""
     return balls.count("yellow")
 
-def red_ball_n(balls:list)->int:
+def red_ball_n(balls:List)->int:
     """this function count red ball"""
     return balls.count("red")
 
-def orange_ball_n(balls:list)->int:
+def orange_ball_n(balls:List)->int:
     """this function count orange ball"""
     return balls.count("orange")
 
 #最多顏色的球是什麼色
 
-def max_color(n_balls:dict)->dict:
+def max_color(n_balls:Dict)->dict:
    return max(n_balls, key=n_balls.get)
 
 #那個顏色的球最少
 
-def min_color(n_balls:dict)->dict:
+def min_color(n_balls:Dict)->dict:
    return min(n_balls, key=n_balls.get)
 
 #平均每個顏色有幾顆球
@@ -51,7 +51,7 @@ def min_color(n_balls:dict)->dict:
 #打印每個顏色及其數量
 
 #打印出顏色數量由大到小 
-def k(n_balls:dict)->dict:
+def k(n_balls:Dict)->dict:
     return (sorted(n_balls.items(), key=lambda x:x[1],reverse=True))
 
 if __name__ == "__main__":
