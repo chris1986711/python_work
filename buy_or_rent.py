@@ -34,7 +34,7 @@ sum_rent_monthly=r+cr
 ####比較####
 
 compare_time=input("打算住幾年:")
-average_time_year=7
+average_time_year=9
 
 sum_buy_avg=sum_buy_once + sum_buy_monthly*average_time_year*12
 sum_rent_avg=sum_rent_monthly*average_time_year*12
