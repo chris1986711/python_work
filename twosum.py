@@ -3,8 +3,8 @@ target = 11
 i = 0
 j = 0
 k=len(nums)
-while i < k:
-    while j < k :
+for  i in range(0,k):
+    for j in range(0,k):
         if nums[i]+nums[j]==target:
             print(i,j)
         j = j+1
