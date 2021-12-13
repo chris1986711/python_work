@@ -18,7 +18,7 @@ i=int(interest)
 cb=int(commute_buy)*3#每公里平均3塊
 pr=int(principal_repayment)
 
-sum_buy_monthly=i+cb+pr
+sum_buy_monthly=i+cb
 
 ####租房####
 ###每個月產生###
@@ -34,12 +34,18 @@ sum_rent_monthly=r+cr
 ####比較####
 
 compare_time=input("打算住幾年:")
-average_time_year=9
+average_time_year=7
 
-sum_buy_avg=sum_buy_once + sum_buy_monthly*average_time_year*12
+sum_buy_avg=sum_buy_monthly*average_time_year*12
 sum_rent_avg=sum_rent_monthly*average_time_year*12
 
+print("買房消費:",sum_buy_avg,"租房消費:",sum_rent_avg)
+
 if sum_buy_avg > sum_rent_avg:
-    print("買>租")
+    print("買<租")
 else:
-    print("租>買")
+    print("買>租")
+
+already_pay=d+pr*average_time_year*12
+debt=p-already_pay
+print("已付房款:",already_pay,"剩餘房款:",debt)
