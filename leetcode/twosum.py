@@ -6,7 +6,6 @@ k=len(nums)
 for  i in range(0,k):
     for j in range(i+1,k):
         if nums[i]+nums[j]==target:
-            return(i,j)
-        j = j+1
-    j = i + 1
+            print(i,j)
+        j = j + 1
     i = i + 1        

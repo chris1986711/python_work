@@ -33,8 +33,8 @@ cr=int(commute_rent)*60#同cb
 rent_comsumption=r+cr
 
 ####比較####
-
-compare_time=10
+ct=input("住幾年")
+compare_time=int(ct)
 bc=buy_comsupmpyion*compare_time*12
 rc=rent_comsumption*compare_time*12
 bpm=buy_comsupmpyion+pr
