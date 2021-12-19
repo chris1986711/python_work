@@ -13,7 +13,11 @@ ly=int(loan_year)
 lm=ly*12#貸款月數
 repayment_principal_month=p//lm
 
-
+i=0
+interest_list=[]
+while i <= lm:
+    im=p*(lm-i)//lm*rm
+    interest_list.append(im)
 
 ##def 每月利息into list##
 
