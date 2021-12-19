@@ -12,7 +12,7 @@ loan_year=input("貸款年數：")
 ly=int(loan_year)
 lm=ly*12#貸款月數
 repayment_principal_month=p//lm
-print(p,ry,rm,ly,lm)
+#利息表
 i=0
 interest_list=[]
 while i <= lm:
