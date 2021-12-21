@@ -1,4 +1,3 @@
-
 def power(b:int):
     j=0
     while 2**j<=b:
