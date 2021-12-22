@@ -1,5 +1,5 @@
-a="hello"
-b="ll"
+a="a"
+b=""
 a_list=list(a)
 b_list=list(b)
 k=len(a_list)-1
@@ -10,7 +10,6 @@ if b in a:
     print(True)
     while i<=k:
         if a_list[i]==b_list[0]:
-            
             break
         elif a_list!=b_list[0]:
             i=i+1
