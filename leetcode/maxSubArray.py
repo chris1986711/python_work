@@ -1,19 +1,19 @@
 class Solution:
     def maxSubArray(self, nums: list[int]) -> int:
-        i=0
-        j=0
-        s=0
-        l=len(nums)
-        sum_list=[]
-        for i in range(0,l):
-            s=0
-            for j in range(i,l):
-                s=s+nums[j]
-                sum_list.append(s)
-        ans=max(sum_list)
-        print(sum_list)
-        return ans
+        l = len(nums)
+        if l == 0: 
+            return 0
+        res = now = nums[0]
+        for i in range(1, l):
+            if now > 0:
+                now += nums[i]
+            else:
+                now = nums[i]
+            
+            if now > res:
+                res = now
+        return res
 
-a_list=[-2,1,-3,4,-1,2,1,-5,4]
+a_list=[]
 maxS=Solution.maxSubArray(self=Solution,nums=a_list)
 print(maxS)
